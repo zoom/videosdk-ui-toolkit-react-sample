@@ -10,20 +10,20 @@ This repo is a [React](https://reactjs.org/) app generated via [Create React App
 
 To get started, clone the repo:
 
-`$ git clone https://github.com/zoom/videosdk-react-sample.git`
+`$ git clone https://github.com/zoom/videosdk-ui-toolkit-react-sample.git`
 
 
 ## Setup
 
-1. Once cloned, navigate to the `videosdk-react-sample` directory:
+1. Once cloned, navigate to the `videosdk-ui-toolkit-react-sample` directory:
 
-   `$ cd videosdk-react-sample`
+   `$ cd videosdk-ui-toolkit-react-sample`
 
 1. Then install the dependencies:
 
    `$ npm install`
 
-1. Open the `videosdk-react-sample` directory in your code editor.
+1. Open the `videosdk-ui-toolkit-react-sample` directory in your code editor.
 
 1. Open the `src/App.js` file, and enter values for the variables:
 
