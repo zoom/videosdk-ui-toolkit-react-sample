@@ -23,6 +23,7 @@ function App() {
 
     fetch(authEndpoint, {
       method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         sessionName:  config.sessionName,
         role: role,
@@ -68,7 +69,7 @@ function App() {
         </div>
 
         <div id='sessionContainer'></div>
-      </main>      
+      </main>
     </div>
   );
 }
