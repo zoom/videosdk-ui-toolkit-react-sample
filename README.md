@@ -2,7 +2,7 @@
 
 Use of this sample app is subject to our [Terms of Use](https://explore.zoom.us/en/video-sdk-terms/).
 
-This repo is a [React](https://reactjs.org/) app generated via [Create React App](https://github.com/facebook/create-react-app) that uses the [Zoom Video SDK UI toolkit](https://developers.zoom.us/docs/video-sdk/web/) to start and joins sessions.
+This repo is a [React](https://reactjs.org/) app generated via [Vite](https://vitejs.dev/) that uses the [Zoom Video SDK UI toolkit](https://developers.zoom.us/docs/video-sdk/web/) to start and joins sessions.
 
 ![Zoom Video SDK](https://raw.githubusercontent.com/zoom/videosdk-ui-toolkit-web/HEAD/ui-toolkit%E2%80%93gallery-view.png)
 
@@ -11,7 +11,6 @@ This repo is a [React](https://reactjs.org/) app generated via [Create React App
 To get started, clone the repo:
 
 `$ git clone https://github.com/zoom/videosdk-ui-toolkit-react-sample.git`
-
 
 ## Setup
 
@@ -27,24 +26,24 @@ To get started, clone the repo:
 
 1. Open the `src/App.js` file, and enter values for the variables:
 
-   | Variable                   | Description |
-   | -----------------------|-------------|
-   | authEndpoint          | Required, your Video SDK auth endpoint that securely generates a Video SDK JWT. [Get a Video SDK auth endpoint here.](https://github.com/zoom/videosdk-auth-endpoint-sample) |
-   | config | Your Video SDK [session details](https://developers.zoom.us/docs/video-sdk/web/ui-toolkit/#join-session) and [enabled features](https://developers.zoom.us/docs/video-sdk/web/ui-toolkit/#supported-features). The `videoSDKJWT` will be set from the response of your `authEndpoint`. |
-   | role | Required, `0` to specify participant, `1` to specify host. |
+   | Variable     | Description                                                                                                                                                                                                                                                                            |
+   | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+   | authEndpoint | Required, your Video SDK auth endpoint that securely generates a Video SDK JWT. [Get a Video SDK auth endpoint here.](https://github.com/zoom/videosdk-auth-endpoint-sample)                                                                                                           |
+   | config       | Your Video SDK [session details](https://developers.zoom.us/docs/video-sdk/web/ui-toolkit/#join-session) and [enabled features](https://developers.zoom.us/docs/video-sdk/web/ui-toolkit/#supported-features). The `videoSDKJWT` will be set from the response of your `authEndpoint`. |
+   | role         | Required, `0` to specify participant, `1` to specify host.                                                                                                                                                                                                                             |
 
    Example:
 
    ```js
-   var authEndpoint = 'http://localhost:4000'
+   var authEndpoint = "http://localhost:4000";
    var config = {
-      videoSDKJWT: '',
-      sessionName: 'test',
-      userName: 'ZoomDev',
-      sessionPasscode: '123',
-      features: ['video', 'audio', 'settings', 'users', 'chat', 'share']
+     videoSDKJWT: "",
+     sessionName: "test",
+     userName: "ZoomDev",
+     sessionPasscode: "123",
+     features: ["video", "audio", "settings", "users", "chat", "share"],
    };
-   var role = 1
+   var role = 1;
    ```
 
 1. Save `App.js`.
