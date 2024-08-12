@@ -54,7 +54,7 @@ To get started, clone the repo:
 
 ## Usage
 
-1. Navigate to http://localhost:3000 and click "Join Session".
+1. Navigate to http://localhost:5173 and click "Join Session".
 
 ## Deployment
 
