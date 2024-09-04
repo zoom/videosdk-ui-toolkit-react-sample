@@ -30,7 +30,7 @@ To get started, clone the repo:
    | Variable                   | Description |
    | -----------------------|-------------|
    | authEndpoint          | Required, your Video SDK auth endpoint that securely generates a Video SDK JWT. [Get a Video SDK auth endpoint here.](https://github.com/zoom/videosdk-auth-endpoint-sample) |
-   | config | Your Video SDK [session details](https://developers.zoom.us/docs/video-sdk/web/ui-toolkit/#join-session) and [enabled features](https://developers.zoom.us/docs/video-sdk/web/ui-toolkit/#supported-features). The `videoSDKJWT` will be set from the response of your `authEndpoint`. |
+   | config | Your Video SDK [session details](https://developers.zoom.us/docs/video-sdk/web/ui-toolkit/#create-a-configuration-object) and [enabled features](https://developers.zoom.us/docs/video-sdk/web/ui-toolkit/#supported-features). The `videoSDKJWT` will be set from the response of your `authEndpoint`. |
    | role | Required, `0` to specify participant, `1` to specify host. |
 
    Example:
@@ -42,7 +42,13 @@ To get started, clone the repo:
       sessionName: 'test',
       userName: 'ZoomDev',
       sessionPasscode: '123',
-      features: ['video', 'audio', 'settings', 'users', 'chat', 'share']
+      features: ['preview', 'video', 'audio', 'settings', 'users', 'chat', 'share'],
+      options: { init: {}, audio: {}, video: {}, share: {}},
+      virtualBackground: {
+         allowVirtualBackground: true,
+         allowVirtualBackgroundUpload: true,
+         virtualBackgrounds: ['https://images.unsplash.com/photo-1715490187538-30a365fa05bd?q=80&w=1945&auto=format&fit=crop']
+      }
    };
    var role = 1
    ```
