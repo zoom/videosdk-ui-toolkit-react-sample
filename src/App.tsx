@@ -13,6 +13,12 @@ function App() {
     userName: "React",
     sessionPasscode: "123",
     features: ["video", "audio", "settings", "users", "chat", "share"],
+    options: { init: {}, audio: {}, video: {}, share: {} },
+    virtualBackground: {
+      allowVirtualBackground: true,
+      allowVirtualBackgroundUpload: true,
+      virtualBackgrounds: ['https://images.unsplash.com/photo-1715490187538-30a365fa05bd?q=80&w=1945&auto=format&fit=crop']
+    }
   };
   const role = 1;
 
@@ -22,25 +28,25 @@ function App() {
     fetch(authEndpoint, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({sessionName: config.sessionName, role: role,}),
+      body: JSON.stringify({ sessionName: config.sessionName, role: role, }),
     }).then((response) => {
-        return response.json();
-      }).then((data) => {
-        if (data.signature) {
-          console.log(data.signature);
-          config.videoSDKJWT = data.signature;
-          joinSession();
-        } else {
-          console.log(data);
-        }
-      }).catch((error) => {
-        console.log(error);
-      });
+      return response.json();
+    }).then((data) => {
+      if (data.signature) {
+        console.log(data.signature);
+        config.videoSDKJWT = data.signature;
+        joinSession();
+      } else {
+        console.log(data);
+      }
+    }).catch((error) => {
+      console.log(error);
+    });
   }
 
   function joinSession() {
     console.log(config);
-    if(sessionContainer) {
+    if (sessionContainer) {
       uitoolkit.joinSession(sessionContainer, config);
       sessionContainer && uitoolkit.onSessionClosed(sessionClosed);
     }
