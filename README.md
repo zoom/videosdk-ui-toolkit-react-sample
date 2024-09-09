@@ -2,7 +2,7 @@
 
 Use of this sample app is subject to our [Terms of Use](https://explore.zoom.us/en/video-sdk-terms/).
 
-This repo is a [React](https://reactjs.org/) app generated via [Create React App](https://github.com/facebook/create-react-app) that uses the [Zoom Video SDK UI toolkit](https://developers.zoom.us/docs/video-sdk/web/) to start and joins sessions.
+This repo is a [React](https://reactjs.org/) app generated via [Vite](https://vitejs.dev/) that uses the [Zoom Video SDK UI toolkit](https://developers.zoom.us/docs/video-sdk/web/) to start and joins sessions.
 
 ![Zoom Video SDK](https://raw.githubusercontent.com/zoom/videosdk-ui-toolkit-web/HEAD/ui-toolkit%E2%80%93gallery-view.png)
 
@@ -11,7 +11,6 @@ This repo is a [React](https://reactjs.org/) app generated via [Create React App
 To get started, clone the repo:
 
 `$ git clone https://github.com/zoom/videosdk-ui-toolkit-react-sample.git`
-
 
 ## Setup
 
@@ -36,7 +35,7 @@ To get started, clone the repo:
    Example:
 
    ```js
-   var authEndpoint = 'http://localhost:4000'
+   var authEndpoint = "http://localhost:4000";
    var config = {
       videoSDKJWT: '',
       sessionName: 'test',
@@ -50,7 +49,7 @@ To get started, clone the repo:
          virtualBackgrounds: ['https://images.unsplash.com/photo-1715490187538-30a365fa05bd?q=80&w=1945&auto=format&fit=crop']
       }
    };
-   var role = 1
+   var role = 1;
    ```
 
 1. Save `App.js`.
@@ -61,7 +60,7 @@ To get started, clone the repo:
 
 ## Usage
 
-1. Navigate to http://localhost:3000 and click "Join Session".
+1. Navigate to http://localhost:5173 and click "Join Session".
 
 ## Deployment
 
