@@ -19,7 +19,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@zoom/videosdk-ui-toolkit": "^1.10.8-2",
+    "@zoom/videosdk-ui-toolkit": "^1.12.1-1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
