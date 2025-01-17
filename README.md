@@ -4,7 +4,7 @@ Use of this sample app is subject to our [Terms of Use](https://explore.zoom.us/
 
 This repo is a [React](https://reactjs.org/) app generated via [Vite](https://vitejs.dev/) that uses the [Zoom Video SDK UI toolkit](https://developers.zoom.us/docs/video-sdk/web/) to start and joins sessions.
 
-![Zoom Video SDK](https://raw.githubusercontent.com/zoom/videosdk-ui-toolkit-web/HEAD/ui-toolkit%E2%80%93gallery-view.png)
+![Zoom Video SDK](https://github.com/zoom/videosdk-ui-toolkit-web/raw/main/uitoolkitgalleryview.png)
 
 ## Installation
 
