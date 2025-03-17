@@ -1,13 +1,14 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
 }
 
 main {
-  width: 70%;
   margin: auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+main #join-flow {
   text-align: center;
 }
 
@@ -29,4 +30,9 @@ main #join-flow button {
 
 main #join-flow button:hover {
   background-color: #2681f2;
+}
+
+#sessionContainer {
+  width: 100%;
+  height: 100%;
 }
