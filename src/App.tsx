@@ -13,6 +13,9 @@ function App() {
     userName: "React",
     sessionPasscode: "123",
     featuresOptions: {
+      preview: {
+        enable: true,
+      },
       virtualBackground: {
         enable: true,
         virtualBackgrounds: [
@@ -57,13 +60,18 @@ function App() {
     if (sessionContainer) {
       uitoolkit.joinSession(sessionContainer, config);
       sessionContainer && uitoolkit.onSessionClosed(sessionClosed);
+      uitoolkit.onSessionDestroyed(sessionDestroyed);
     }
   }
 
   const sessionClosed = () => {
     console.log("session closed");
-    sessionContainer && uitoolkit.closeSession(sessionContainer);
     document.getElementById("join-flow")!.style.display = "block";
+  };
+
+  const sessionDestroyed = () => {
+    console.log("session destroyed");
+    uitoolkit.destroy();
   };
 
   return (
