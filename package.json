@@ -1,6 +1,6 @@
 {
   "name": "videosdk-ui-toolkit-react-sample",
-  "version": "2.3.0-2",
+  "version": "2.3.5-1",
   "author": "Zoom Video Communications, Inc.",
   "contributors": [
     {
@@ -22,7 +22,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@zoom/videosdk-ui-toolkit": "2.3.0-2",
+    "@zoom/videosdk-ui-toolkit": "2.3.5-1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
