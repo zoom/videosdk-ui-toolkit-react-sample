@@ -1,0 +1,19 @@
+package.json
+  s_ad4809008827ef::t_2500a8573f465b 3,25,41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "6138f8eb2fce35546b49ba3eaba6a173d1b0d037",
+  "prompts": {},
+  "sessions": {
+    "s_ad4809008827ef": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a16585-757b-7173-9bab-6ff78dc88c31",
+        "model": "gpt-6-sol"
+      },
+      "human_author": "Feiya Du <feiya.du@zoom.us>"
+    }
+  }
+}
